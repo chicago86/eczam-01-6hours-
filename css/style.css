@@ -733,9 +733,23 @@ input:focus:-ms-input-placeholder {
   padding: 120px 0; }
   .ba-unit .ba-one {
     margin-left: 100px; }
+    .ba-unit .ba-one:hover {
+      margin-left: 235px;
+      border: 10px solid fuchsia;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      cursor: pointer; }
   .ba-unit .ba-two {
     margin-left: 235px;
     padding: 0; }
+    .ba-unit .ba-two:hover {
+      margin-left: 100px;
+      cursor: pointer;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      border: 10px solid fuchsia; }
 
 .ba-four {
   background-color: #333333;
