@@ -8,10 +8,14 @@ body {
   color: #ffffff;
   margin: 0;
 }
-// h1,h2,h3,h4,h5,h6,p{
-// 	margin: 0;
-// 	padding: 0;
-// }
+
+a {
+  padding: 0;
+  margin: 0;
+  color: currentColor;
+  text-decoration: none;
+}
+
 
 /* Layout */
 .ba-container {
@@ -183,13 +187,17 @@ input:focus:-ms-input-placeholder {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding-top: 28px;
+    padding-top: 15px;
+    &:hover{
+      color: fuchsia;
+      transition: 0.3s;
+    }
   }
 }
 .ba-cardsite {
   display: flex;
   list-style: none;
-  padding: 35px 0;
+  margin: 35px 0;
   a {
     display: inline-block;
     text-decoration: none;
@@ -200,6 +208,8 @@ input:focus:-ms-input-placeholder {
     font-size: 14px;
     &:hover {
       color: fuchsia;
+      text-decoration: underline;
+     
     }
   }
 }
@@ -230,11 +240,21 @@ input:focus:-ms-input-placeholder {
   text-transform: uppercase;
   letter-spacing: 0.075em;
   margin-top: 50px;
-  background: linear-gradient(60deg, #496bfe, #a39eba);
+  background: linear-gradient(60deg, #496bfe 50%, #a39eba 50%);
   text-align: center;
   width: 225px;
   height: 60px;
-  padding: 20px 0;
+  opacity: 1;
+
+  p {
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(60deg, #a39eba 50%, #496bfe 50%);
+  }
 }
 .ba-unit {
   padding: 120px 0;
@@ -414,4 +434,43 @@ svg:hover {
 }
 .ba-socials a {
   color: white;
+}
+.arm {
+  transform-origin: 0 100%;
+  &:hover {
+    transform: rotate(-40deg);
+    transition: 3s;
+    cursor: pointer;
+    + h1 {
+      color: fuchsia;
+    }
+  }
+}
+.checked {
+  &:hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+    cursor: pointer;
+    + h1 {
+      color: fuchsia;
+    }
+  }
+}
+.big {
+  &:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+    cursor: pointer;
+    + h1 {
+      color: fuchsia;
+    }
+  }
+}
+.ba-unit{
+  img:hover{
+  overflow: hidden;
+  width: 490px;
+  transition: 0.3s;
+ 
+}
 }

@@ -474,6 +474,12 @@ body {
   color: #ffffff;
   margin: 0; }
 
+a {
+  padding: 0;
+  margin: 0;
+  color: currentColor;
+  text-decoration: none; }
+
 /* Layout */
 .ba-container {
   padding-left: 20px;
@@ -651,14 +657,19 @@ input:focus:-ms-input-placeholder {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding-top: 28px; }
+    padding-top: 15px; }
+    .ba-header__logo:hover {
+      color: fuchsia;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
 
 .ba-cardsite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding: 35px 0; }
+  margin: 35px 0; }
   .ba-cardsite a {
     display: inline-block;
     text-decoration: none;
@@ -668,7 +679,8 @@ input:focus:-ms-input-placeholder {
     font-family: Aleo;
     font-size: 14px; }
     .ba-cardsite a:hover {
-      color: fuchsia; }
+      color: fuchsia;
+      text-decoration: underline; }
 
 .ba-choose {
   background: url(../img/section2.jpg) no-repeat;
@@ -700,13 +712,22 @@ input:focus:-ms-input-placeholder {
   text-transform: uppercase;
   letter-spacing: 0.075em;
   margin-top: 50px;
-  background: -webkit-linear-gradient(30deg, #496bfe, #a39eba);
-  background: -o-linear-gradient(30deg, #496bfe, #a39eba);
-  background: linear-gradient(60deg, #496bfe, #a39eba);
+  background: -webkit-linear-gradient(30deg, #496bfe 50%, #a39eba 50%);
+  background: -o-linear-gradient(30deg, #496bfe 50%, #a39eba 50%);
+  background: linear-gradient(60deg, #496bfe 50%, #a39eba 50%);
   text-align: center;
   width: 225px;
   height: 60px;
-  padding: 20px 0; }
+  opacity: 1; }
+  .ba-buttons p {
+    color: white;
+    padding: 20px 0;
+    margin: 0; }
+  .ba-buttons:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(30deg, #a39eba 50%, #496bfe 50%);
+    background: -o-linear-gradient(30deg, #a39eba 50%, #496bfe 50%);
+    background: linear-gradient(60deg, #a39eba 50%, #496bfe 50%); }
 
 .ba-unit {
   padding: 120px 0; }
@@ -898,5 +919,48 @@ svg:hover {
 
 .ba-socials a {
   color: white; }
+
+.arm {
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%; }
+  .arm:hover {
+    -webkit-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    -webkit-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    cursor: pointer; }
+    .arm:hover + h1 {
+      color: fuchsia; }
+
+.checked:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  cursor: pointer; }
+  .checked:hover + h1 {
+    color: fuchsia; }
+
+.big:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  cursor: pointer; }
+  .big:hover + h1 {
+    color: fuchsia; }
+
+.ba-unit img:hover {
+  overflow: hidden;
+  width: 490px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
